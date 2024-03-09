@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cajero de Criptomonedas</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="futuristic-header">
+        <h1 class="glowing-text"></h1>
+        <nav>
+            <ul>
+                <li><a href="./InterfazCajero.html">Inicio</a></li>
+                <li><a href="">Iniciar Sesión</a></li>
+                <li><a href="">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="form-container">
+        <section class="futuristic-form login">
+            <h1 class="neon-text">REGISTRESE</h1>
+            <form action="#">
+            
+                <h2>Usuario:</h2>
+                <input type="text" id="usuario">
+            
+                <h2>Contraseña:</h2>
+                <input type="password" id="contraseña">
+            
+                <h2>Confirmación de Contraseña:</h2> 
+                <input type="password" id="confirmacionContraseña">
+                <p id="alerta"></p>
+            </form>
+            <button class="futuristic-button" onclick="registroUsuarios()">Registrarse</button>
+        </section>
+        <section class="futuristic-form form-init" id="formulario"> 
+            <h1 class="neon-text">INICIAR SESION</h1>
+            <form action="#">
+                <h2>Usuario:</h2><br>
+                <input type="text" id="user"> 
+                <h2>Contraseña:</h2>
+                <input type="password" id="pasw"> 
+                <button class="futuristic-button" onclick="ValidacionUsuario()" id="redirigir">Iniciar Sesión</button>
+            </form>
+            <p id="alerta2"></p>
+        </section>
+    </div>
+    <footer class="futuristic-footer">
+        <h2>Nombre</h2>
+        <h3>Jeferson</h3>
+
+        <h2>Apellidos</h2>
+        <h3>Gomez Gomez</h3>
+        
+        <h2>Grupo y Horario</h2>
+        <h3>Sábados 10:30 am - 3:00 pm</h3>
+    </footer>
+    <script src="./funcionalidad.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del encabezado */
+.futuristic-header {
+    background-color: #111;
+    text-align: center;
+    padding: 20px;
+}
+
+.futuristic-header h1 {
+    font-size: 36px;
+}
+
+.glowing-text {
+    color: #e9f0ef;
+    text-shadow: 0 0 10px #e9f0ef, 0 0 20px #e9f0ef, 0 0 30px #e9f0ef;
+    animation: glowing 2s linear infinite;
+}
+
+@keyframes glowing {
+    0% { color: #e9f0ef; }
+    50% { color: #e9f0ef; }
+    100% { color: #e9f0ef; }
+}
+.futuristic-form.login{
+    max-width: 350px;
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+/* Estilos de los formularios */
+
+.futuristic-form {
+    background-color: #333;
+    border: 1px solid #444;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+    max-width: 300px;
+    height: 100%;
+}
+
+
+.futuristic-form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.futuristic-form input[type="text"],
+.futuristic-form input[type="password"] {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #666;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 3px;
+}
+
+.futuristic-button {
+    background-color: #eff1ef;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.futuristic-link {
+    color: #f2f5f2;
+    text-decoration: none;
+}
+
+/* Estilos del pie de página */
+.futuristic-footer {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+}
+
+.futuristic-footer h2 {
+    font-size: 20px;
+}
+
+.futuristic-footer h3 {
+    font-size: 16px;
+}
+
+
+/* Estilos del enlace de navegación */
+.futuristic-header ul {
+    list-style: none;
+    padding: 0;
+}
+
+.futuristic-header ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.futuristic-header ul li a {
+    text-decoration: none;
+    color: #e9f0ef;
+    transition: color 0.3s;
+}
+
+.futuristic-header ul li a:hover {
+    color:#e9f0ef
+}
+

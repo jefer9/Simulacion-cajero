@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styleInterfaz.css">
+</head>
+<body>
+    <h1>TU BANCO AMIGO</h1>
+
+    
+    <h2>Saldo:</h2>
+    <h2 id="saldo">100000</h2>
+    
+
+    <!--tabla de retiro-->
+    <table id="retirar" style="display: none;">
+        <tr>
+            <th>Valor a retirar: </th>
+            <th><input type="text" id="valorRetiro"></th>
+            <th><button onclick="FuncionRetiro()">Desembolsar</button></th>
+        </tr>
+       
+    </table>
+
+    <!--tabla de transferencias-->
+    <table id="transferir" style="display: none;">
+        <tr>
+            <th>Cuenta a consignar: </th>
+    0        <th><input type="text" id="cuentaDestino"></th>
+        </tr>
+        <tr>
+            <th>Cantidad a transferir: </th>
+            <th><input type="text" id="cantidadTransferir"></th>
+        </tr>
+        <tr>
+            <th>Operacion:</th>
+            <th><button onclick="FuncionTransferencias()">Transferir</button></th>
+        </tr>
+        <p id="alerta-transfer"></p>
+    </table>
+
+
+    <!--Tabla de movimientos-->
+    <table id="movimientos">
+        <tr>
+            <th>Tipo</th>
+            <th>Monto</th>
+        </tr>
+    </table>
+
+    <!--ALERTA EN ERRORES-->
+    <p id="saldoinsuficiente"></p>
+    <div class="button-container">
+        <button onclick="MostrarRetiro()">Retirar</button>
+        <button onclick="MostrarTranseferencia()">Consignar</button>
+        <button onclick="MostrarMovimientos()" ondblclick="">Consultar movimientos</button>
+        <button><a href="./index.html">Salir</a></button>
+    </div>
+    
+
+    <script src="./funcionalidad.js"></script>
+</body>
+</html>
